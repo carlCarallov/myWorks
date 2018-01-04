@@ -22,6 +22,9 @@ $(document).ready(function(){
                 param1: 'name',
                 param2: 'type'
             },
+            beforeSend:function(xhr){
+                $('#portfolioTabl').html('<div id="loadTable"><div class="loaderTabl"></div></div>');
+            },
             success: function (xhr) {
                 var pre_addr = '';
                 pre_addr = myPlugin.img_addr;
@@ -89,7 +92,6 @@ $(document).ready(function(){
                 param2: 'type'
             },
             success: function(xhr){
-                 $('#navMenu').hide();
                 var temp_addr = '';
                 temp_addr = myPlugin.img_addr;
                 var fullData = $.parseJSON(xhr);
@@ -97,9 +99,9 @@ $(document).ready(function(){
                 block.empty();
                 var close = $('<button />').attr('class', 'closeF');
                 close.on('click', closeBlock);
-                close.html('&times');
+                close.html('<div>&times</div>');
                 block.append(close);
-                block.css('display','block');
+                block.show(1000);
                 console.log(temp_addr);
                 for(var key in fullData){
                     if(s == fullData[key].name){
@@ -118,8 +120,7 @@ $(document).ready(function(){
     }
     
     function closeBlock(){
-        $('#navMenu').show();
-        $('#fullShow').hide();
+        $('#fullShow').hide(1000);
     }
 });
 

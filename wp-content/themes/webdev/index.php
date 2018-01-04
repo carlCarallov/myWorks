@@ -38,7 +38,7 @@ get_header();
 
             <p class="prew2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="2s">ПАВЛОВ ВЛАДИМИР</p>
             <div class="txt wow fadeInLeft" data-wow-duration="1s" data-wow-delay="2s">
-                <p class="p1">web - разработчик /html - верстальщик</p>
+                <p class="p1">web - разработчик</p>
                 <p class="p2">специалист cms joomla / wordpress</p>
                 <p class="p3">ПРОГРАММИСТ PHP / JAVASCRIPT</p>
             </div>
@@ -90,29 +90,33 @@ get_header();
         </div>
 <div id="fullShow"></div>
         <div id="portfolioTabl" class="wow fadeInUp" data-wow-duration="1s" data-wow-offset="100">
-
+<div id="loadTabl" class="loadTabl">
+    <div class="loaderTabl"></div>
+</div>
         </div>
     </div>
     <div id="resume" class="container">
          <p class="r1">Резюме</p>
-        <div class="resumeContent">
+        <div class="wow fadeInDown resumeContent" data-wow-duration="1s" data-wow-offset="100">
           <div class="skills">
               <p class="r2">Навыки и умения</p>
-              <p class="r3">hutonroiew, ewiorjweo jewoeiuoew iweomncowcnewioncxkj cjwc cwnuinciweuhc wc chweilchncsjliehwcnjnsn uchwielcbcnjweuh</p>
+              <p class="r3">Создание адаптивной верстки, полностью интерактивных страниц(не требующих перезагрузки), написание плагинов и расширений для CMS Joomla/Wordpress. </p>
           </div>
-          <div class="myself">
+          <div class="wow fadeInLeft myself" data-wow-duration="1s" data-wow-offset="100">
               <p class="r2">Личные качества</p>
-              <p class="r3">hutonroiew, ewiorjweo jewoeiuoew iweomncowcnewioncxkj cjwc cwnuinciweuhc wc chweilchncsjliehwcnjnsn uchwielcbcnjweuh</p>
+              <p class="r3">Честность к заказчику, исполнительность, если беру заказ, то обязательно довожу его до конца. </p>
           </div>
          
-           <div class="coding">
+           <div class="wow fadeInRight coding" data-wow-duration="1s" data-wow-offset="100">
                <p class="r2">Языки программирования</p>
-               <p class="r3">hutonroiew, ewiorjweo jewoeiuoew iweomncowcnewioncxkj cjwc cwnuinciweuhc wc chweilchncsjliehwcnjnsn uchwielcbcnjweuh</p>
+               <p class="r3">Владею технологиями HTML, CSS, языками программирования - javascript, PHP, а так же библиотеками jQuery,Vue.js.</p>
            </div>
-            <div class="progs">
+<!--
+            <div class="wow fadeInUp progs" data-wow-duration="1s" data-wow-offset="100">
               <p class="r2">Программы</p>
               <p class="r3">hutonroiew, ewiorjweo jewoeiuoew iweomncowcnewioncxkj cjwc cwnuinciweuhc wc chweilchncsjliehwcnjnsn uchwielcbcnjweuh</p>
           </div>
+-->
         </div>
 
     </div>
